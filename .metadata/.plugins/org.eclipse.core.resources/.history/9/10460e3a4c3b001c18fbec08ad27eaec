@@ -1,0 +1,16 @@
+package WhatsappUITest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class UITestObject {
+	
+private static WebElement locator = null;
+	
+	public static WebElement continueWithEmail(WebDriver driver){
+		locator = driver.findElement(By.xpath("//div[contains(text(),'Continue with Email or Apple')]"));
+		return locator;
+	}
+
+}

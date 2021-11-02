@@ -1,0 +1,6 @@
+INDEX VERSION 1.3+D:\SQA Projects\QUPS\Whatsapp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2032198187.index
+1510019141.index
+3323516488.index
+2477590708.index
+2206960738.index

@@ -1,0 +1,10 @@
+package WhatsappUITest;
+
+import org.openqa.selenium.WebElement;
+
+public class VerifySearchNumberObjects {
+	
+	private static WebElement locator = null;
+	
+
+}
