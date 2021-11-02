@@ -5,8 +5,12 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.ss.usermodel.CellBase;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
@@ -37,7 +41,7 @@ public class UITestNG {
 		
 		// File object create & location the xlsx file
 		
-		File src=new File("D:\\SQA Projects\\QUPS\\Numbers.xlsx");
+		File src=new File("D:\\SQA Projects\\QUPS\\Whatsapp\\Numbers.xlsx");
 				
 		// File input stream class used for read & write action from the file & pass the file object as a parameter
 				
@@ -45,12 +49,7 @@ public class UITestNG {
 				
 		XSSFWorkbook xsf= new XSSFWorkbook(fis);
 				
-		// Created XSSFSheet sheet object
-		// XSSFSheet loads the specific sheet in our workbook at initial value 
-				
 		XSSFSheet sheet= xsf.getSheetAt(0);
-				
-		// Get row & get column action
 				
 		String data =sheet.getRow(0).getCell(0).getStringCellValue();
 		
@@ -65,17 +64,36 @@ public class UITestNG {
 		Robot rb = new Robot();
 		rb.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
+		rb.keyRelease(KeyEvent.VK_ENTER);
 		
 		// Test Case 2
-		UITestObject.writeMessage(driver).sendKeys("Vai");
+		UITestObject.writeMessage(driver).sendKeys("Robot send message");
 //		Thread.sleep(3000);
 		
 		Robot sendKey = new Robot();
 		sendKey.keyPress(KeyEvent.VK_ENTER);
 //		Thread.sleep(3000);
-//		rb.keyPress(KeyEvent.VK_ENTER);
+
+		
+		// Test Case 3
+//		CellBase cell = sheet.getRow(1).createCell(1);
+		
+		XSSFCell cell = sheet.getRow(1).createCell(1);
+		
+		cell.setCellValue("Sent");
+		
+		FileOutputStream outputStream = new FileOutputStream("D:\\SQA Projects\\QUPS\\Whatsapp\\Numbers.xlsx");
+		xsf.write(outputStream);
 		
 		xsf.close();
+		
+		// Test Case 4
+		
+		UITestObject.messageStatus(driver).getText();
+		
+		System.out.println("Output" + UITestObject.messageStatus(driver).getText());
+		
+		driver.quit();
 		
 	}
 
