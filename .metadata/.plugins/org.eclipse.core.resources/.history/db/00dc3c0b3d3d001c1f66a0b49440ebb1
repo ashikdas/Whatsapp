@@ -74,7 +74,7 @@ public class UITestNG {
 		Robot sendKey = new Robot();
 		sendKey.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
-		sendKey.keyRelease(KeyEvent.VK_ENTER);
+		
 	}
 	
 	@Test (priority=3)
@@ -144,7 +144,6 @@ public class UITestNG {
 		
 		Thread.sleep(2000);
 		rb.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(1000);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		
 		Thread.sleep(5000);

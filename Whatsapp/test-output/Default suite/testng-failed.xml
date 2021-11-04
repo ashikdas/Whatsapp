@@ -5,11 +5,9 @@
     <classes>
       <class name="WhatsappUITest.UITestNG">
         <methods>
-          <include name="verifyLogout"/>
-          <include name="verifySearchNumber"/>
           <include name="setup"/>
           <include name="verifySendMessageStatus"/>
-          <include name="verifySendMessage"/>
+          <include name="verifySuccessfullySendMessage"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- WhatsappUITest.UITestNG -->

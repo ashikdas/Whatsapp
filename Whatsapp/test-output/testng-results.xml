@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56473" started-at="2021-11-04T06:21:28Z" finished-at="2021-11-04T06:22:24Z">
+  <suite name="Default suite" duration-ms="75119" started-at="2021-11-04T07:07:15Z" finished-at="2021-11-04T07:08:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56473" started-at="2021-11-04T06:21:28Z" finished-at="2021-11-04T06:22:24Z">
+    <test name="Default test" duration-ms="75119" started-at="2021-11-04T07:07:15Z" finished-at="2021-11-04T07:08:31Z">
       <class name="WhatsappUITest.UITestNG">
-        <test-method status="PASS" signature="setup()[pri:0, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="setup" is-config="true" duration-ms="33469" started-at="2021-11-04T12:21:28Z" finished-at="2021-11-04T12:22:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="setup" is-config="true" duration-ms="37724" started-at="2021-11-04T13:07:15Z" finished-at="2021-11-04T13:07:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySearchNumber()[pri:1, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySearchNumber" duration-ms="7759" started-at="2021-11-04T12:22:01Z" finished-at="2021-11-04T12:22:09Z">
+        <test-method status="PASS" signature="verifySearchNumber()[pri:1, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySearchNumber" duration-ms="8708" started-at="2021-11-04T13:07:53Z" finished-at="2021-11-04T13:08:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchNumber -->
-        <test-method status="PASS" signature="verifySendMessageStatus()[pri:4, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySendMessageStatus" duration-ms="3373" started-at="2021-11-04T12:22:09Z" finished-at="2021-11-04T12:22:12Z">
+        <test-method status="PASS" signature="verifySendMessage()[pri:2, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySendMessage" duration-ms="6190" started-at="2021-11-04T13:08:02Z" finished-at="2021-11-04T13:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendMessage -->
+        <test-method status="PASS" signature="verifySuccessfullySendMessage()[pri:3, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySuccessfullySendMessage" duration-ms="5378" started-at="2021-11-04T13:08:08Z" finished-at="2021-11-04T13:08:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfullySendMessage -->
+        <test-method status="PASS" signature="verifySendMessageStatus()[pri:4, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifySendMessageStatus" duration-ms="3191" started-at="2021-11-04T13:08:13Z" finished-at="2021-11-04T13:08:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySendMessageStatus -->
-        <test-method status="PASS" signature="verifyLogout()[pri:5, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifyLogout" duration-ms="10342" started-at="2021-11-04T12:22:12Z" finished-at="2021-11-04T12:22:22Z">
+        <test-method status="PASS" signature="verifyLogout()[pri:5, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="verifyLogout" duration-ms="11421" started-at="2021-11-04T13:08:17Z" finished-at="2021-11-04T13:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="Teardown" is-config="true" duration-ms="1479" started-at="2021-11-04T12:22:22Z" finished-at="2021-11-04T12:22:24Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:WhatsappUITest.UITestNG@72b6cbcc]" name="Teardown" is-config="true" duration-ms="2445" started-at="2021-11-04T13:08:28Z" finished-at="2021-11-04T13:08:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
