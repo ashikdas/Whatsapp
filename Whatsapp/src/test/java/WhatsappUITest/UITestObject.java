@@ -26,7 +26,7 @@ private static WebElement locator = null;
 	}
 	
 	public static WebElement messageStatus(WebDriver driver){
-		locator = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/div[2]/div[3]/div[23]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]"));
+		locator = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[3]/div[1]/div[2]/div[3]/div[last()]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]"));
 		return locator;
 	}
 
@@ -34,5 +34,17 @@ private static WebElement locator = null;
 		locator = driver.findElement(By.xpath("//span[@data-testid='menu']"));
 		return locator;
 	}
+	
+//	public static XSSFWorkbook workBook() throws Exception{
+//		File src=new File("D:\\SQA Projects\\QUPS\\Whatsapp\\Numbers.xlsx");
+//		
+//		// File input stream class used for read & write action from the file & pass the file object as a parameter
+//				
+//		FileInputStream fis=new FileInputStream(src);
+//				
+//		XSSFWorkbook xsf= new XSSFWorkbook(fis);
+//		
+//		return xsf;
+//	}
 }
 
